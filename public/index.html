@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Chris Hindes</title>
-    <meta name="description" content="A polished welcome page ready to deploy on Google Cloud Run." />
+    <title>Chris Hindes | Systems Engineer</title>
+    <meta name="description" content="Welcome page for Chris Hindes, a systems engineer focused on Azure, data governance, data migration, workflow automation, and enterprise data systems." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +36,10 @@
       .pill { padding: 0.55rem 0.8rem; border-radius: 999px; background: rgba(15, 23, 42, 0.86); border: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
       main { display: grid; gap: 1.4rem; margin-top: 32px; }
       .hero, .card { background: var(--panel); border: 1px solid var(--line); border-radius: 28px; box-shadow: 0 20px 60px rgba(15, 23, 42, 0.35); backdrop-filter: blur(18px); }
-      .hero { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.4rem; padding: 28px; }
+      .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.4rem; padding: 28px; }
+      .profile-card { display: grid; gap: 1rem; align-content: start; }
+      .avatar-wrap { display: grid; justify-items: center; gap: 0.75rem; }
+      .avatar { width: 180px; height: 180px; border-radius: 24px; object-fit: cover; border: 1px solid var(--line); box-shadow: 0 18px 40px rgba(56, 189, 248, 0.18); }
       .eyebrow { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 600; color: #bae6fd; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.22em; }
       h1 { font-size: clamp(2.6rem, 5vw, 4.4rem); line-height: 1.02; margin: 0.45rem 0 0.9rem; }
       .lede { color: var(--muted); font-size: 1.08rem; max-width: 54ch; }
@@ -52,6 +55,7 @@
       .chip-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
       .chip { border-radius: 999px; padding: 0.35rem 0.55rem; border: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
       .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+      .mini-note { color: #dbeafe; font-size: 0.95rem; line-height: 1.45; }
       .card { padding: 18px; }
       .card h2 { font-size: 1.02rem; margin: 0 0 0.35rem; }
       .card p { color: var(--muted); margin: 0; line-height: 1.5; font-size: 0.97rem; }
@@ -67,57 +71,58 @@
           <div class="brand-mark">CH</div>
           <span>Chris Hindes</span>
         </div>
-        <span class="pill">Cloud Run ready welcome page</span>
+        <span class="pill">Systems Engineer</span>
       </nav>
 
       <main>
         <section class="hero">
           <article>
-            <div class="eyebrow">Welcome • Cloud-native</div>
-            <h1>Launch your digital welcome page with confidence.</h1>
-            <p class="lede">This page is lightweight, responsive, and ready to be served from Google Cloud Run. It uses a simple Node server so deployment stays straightforward and reliable.</p>
+            <div class="eyebrow">Welcome • Systems Engineer</div>
+            <h1>Hi, I’m Chris Hindes — a systems engineer focused on data governance, Azure, migration, and automation.</h1>
+            <p class="lede">I work at the intersection of systems engineering and enterprise data, building reliable solutions for data movement, metadata integration, archiving, retention, workflow automation, and operational reporting. I enjoy turning complex requirements into practical, supportable systems that improve how teams work at scale.</p>
             <div class="actions">
-              <a class="btn btn-primary" href="#features">Explore the page</a>
-              <a class="btn btn-secondary" href="https://cloud.google.com/run" target="_blank" rel="noreferrer">Google Cloud Run</a>
+              <a class="btn btn-primary" href="#features">See my focus</a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com" target="_blank" rel="noreferrer">Connect</a>
             </div>
           </article>
 
-          <aside class="intro-card card">
-            <div>
-              <strong>Why this setup works</strong>
-              <p>Single command startup, container-friendly, and easy to scale automatically on Cloud Run.</p>
+          <aside class="profile-card card">
+            <div class="avatar-wrap">
+              <img class="avatar" src="/headshot.png" alt="Chris Hindes headshot" />
+              <strong>Chris Hindes</strong>
+              <span class="mini-note">Systems Engineer • Azure • Data Governance • Workflow Automation</span>
             </div>
             <div class="chip-row">
-              <span class="chip">Node.js</span>
-              <span class="chip">Docker</span>
-              <span class="chip">Cloud Run</span>
-              <span class="chip">HTTPS</span>
+              <span class="chip">Azure</span>
+              <span class="chip">Data Migration</span>
+              <span class="chip">Metadata Integration</span>
+              <span class="chip">Workflow Automation</span>
             </div>
             <div class="stat-grid">
-              <div class="stat"><strong>1</strong> small service entry point</div>
-              <div class="stat"><strong>0</strong> extra dependencies required</div>
-              <div class="stat"><strong>100%</strong> ready for container deployment</div>
+              <div class="stat"><strong>Enterprise</strong> data systems and governance</div>
+              <div class="stat"><strong>Azure</strong> and cloud/on-prem environments</div>
+              <div class="stat"><strong>Process</strong> improvement and automation</div>
             </div>
           </aside>
         </section>
 
         <section id="features" class="grid">
           <article class="card">
-            <h2>Fast to deploy</h2>
-            <p>Use the included Dockerfile and the standard Cloud Run workflow to publish this welcome page in minutes.</p>
+            <h2>What I do</h2>
+            <p>I build reliable systems for data governance, migration, archiving, retention, and reporting across cloud and on-prem environments.</p>
           </article>
           <article class="card">
-            <h2>Simple to extend</h2>
-            <p>Swap the copy, add sections, or connect analytics without changing the deployment pattern.</p>
+            <h2>What I bring</h2>
+            <p>I combine hands-on technical depth with process improvement, documentation, and cross-team coordination to move work forward.</p>
           </article>
           <article class="card">
-            <h2>Production friendly</h2>
-            <p>It listens on the Cloud Run $PORT environment variable and serves static assets cleanly.</p>
+            <h2>What I value</h2>
+            <p>I focus on data reliability, reduced manual effort, and solutions that help teams operate more effectively at scale.</p>
           </article>
         </section>
       </main>
 
-      <footer>Built for Google Cloud Run deployment.</footer>
+      <footer>Welcome page for Chris Hindes — systems engineer focused on data governance, Azure, and automation.</footer>
     </div>
   </body>
 </html>
