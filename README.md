@@ -12,20 +12,10 @@ Open http://localhost:8080/
 
 ## Deploy to Google Cloud Run
 
-1. Build and push the container image:
+The site runs as the Cloud Run service `chrishindes-com` in `europe-west1` (project `project-4730f157-aa81-4a28-bea`).
+
+Deploys are automatic: a Cloud Build trigger connected to this GitHub repo rebuilds the container from the `Dockerfile` and deploys it on every push to `main`. To deploy manually from a local checkout instead:
 
 ```bash
-gcloud builds submit --tag gcr.io/PROJECT_ID/welcome-page
+gcloud run deploy chrishindes-com --source . --region europe-west1 --project project-4730f157-aa81-4a28-bea
 ```
-
-2. Deploy to Cloud Run:
-
-```bash
-gcloud run deploy welcome-page \
-  --image gcr.io/PROJECT_ID/welcome-page \
-  --platform managed \
-  --region us-central1 \
-  --allow-unauthenticated
-```
-
-Replace `PROJECT_ID` with your Google Cloud project ID.
