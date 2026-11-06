@@ -12,7 +12,7 @@ Personal welcome page for Chris Hindes (Systems Engineer: data governance, Azure
 npm start            # node server.js → http://localhost:8080 (override with PORT)
 ```
 
-Deploys are automatic: a Cloud Build trigger (registered in the `global` region, connected to the GitHub repo) rebuilds from the `Dockerfile` and deploys to the Cloud Run service `chrishindes-com` in `europe-west1` on every push to `main`. Merging a PR to `main` therefore ships to production. Manual fallback:
+Deploys are automatic: a Cloud Build trigger (registered in the `global` region, connected to the GitHub repo) rebuilds from the `Dockerfile` and deploys to the Cloud Run service `chrishindes-com` in `europe-west1` on every push to `main`, except pushes where every changed file matches the trigger's `ignoredFiles` (`*.md`, `**/*.md`). Merging a PR to `main` that touches anything other than Markdown therefore ships to production. Manual fallback:
 
 ```bash
 gcloud run deploy chrishindes-com --source . --region europe-west1 --project project-4730f157-aa81-4a28-bea
