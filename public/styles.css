@@ -310,6 +310,24 @@ h1 {
   font-size: 0.95rem;
 }
 
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.project-card .btn {
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .project-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 footer {
   padding: 1.5rem 0 0;
   color: var(--subtle);
